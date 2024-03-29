@@ -1,0 +1,92 @@
+$font: 'Baloo Da 2', sans-serif;
+$inter: 'Inter', sans-serif;
+
+
+//colors
+$white: #fff;
+$black: #000;
+$grey: #EBEBEB;
+$text: #333;
+
+$textBlack: #5C5C5C;
+$textGrey: rgba(#1A1A1A, 0.5);
+$textLightBlue: #6DB5D1;
+$blue: #315a9c;
+$darkBlue: #005295;
+
+$green: #71B078;
+$red: #D3584B;
+
+$violetLight: #9A83B7;
+$violetBorder: #F2EFF8;
+$violet: #63517A;
+$violetDark: #493d5a;
+$disabledColor: #A098AB;
+
+$settingsVioletText: #7A5665;
+
+$yellow: #EDBC33;
+$yellowHover: #ffa500;
+
+$fillColorLight: #F7F8FE;
+$fillColorDark: #2B2D35;
+
+$fieldBorderColor: #EFEFEF;
+
+
+$websiteViolet: #4b3d5b;
+$websiteText: #454545;
+
+$indigo: #253B86;
+$indigoDark: #303852;
+$lightSteelBlue: #C5CBE3;
+
+$lineHeight: 0.02em;
+
+//font-size
+$fs1: 56px;
+$fs2: 30px;
+$fs3: 14px;
+$fs4: 24px;
+$fs5: 18px;
+
+//line-height
+$lh1: 68px;
+$lh2: 36px;
+$lh3: 20px;
+$lh4: 29px;
+$lh5: 28px;
+
+// Media queries
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 1024px;
+$md: 768px;
+$sm: 540px;
+$xs: 425px;
+$xxs: 380px;
+
+.spacer{
+	display: flex;
+	flex: 1;
+}
+
+/* ---------- mixins ---------- */
+
+@mixin transition ($time:0.3s, $easing:ease, $delay:0s) {
+	-webkit-transition: all $time $easing $delay;
+	-moz-transition: all $time $easing $delay;
+	transition: all $time $easing $delay;
+}
+
+@mixin type ($ff:$inter, $fz:1.4rem, $fw:400, $tt:none, $lh:1.285) {
+	font-family: $ff;
+	font-size: $fz;
+	font-weight: $fw;
+	text-transform: $tt;
+	line-height: $lh;
+}
+
+@mixin divider($height) {
+	height: $height;
+}
